@@ -1,0 +1,320 @@
+#main-navbar .navbar-brand {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.063rem;
+}
+#main-navbar .navbar-nav .nav-item .nav-link {
+    font-family: 'Monserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.063rem;
+}
+#main-navbar .navbar-nav .nav-item .nav-link.active, #main-navbar .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;
+}
+header.back-image {
+    background-image: url("/img/pexels-joshsorenson-1714207.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+header.back-image .back-image-sub {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header.back-image .back-image-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem gray;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .my-section {
+    padding: 6rem 0;
+} */
+/* .my-section h2.s-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+} */
+.my-section h3.s-subheading {
+    /* font -size: 1rem; */
+    font-weight: 600;
+    /* font-style: italic; */
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#portfolio .p-item .p-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+#portfolio .p-item .p-link .p-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 22, 23, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+#portfolio .p-item .p-link .p-hover .ph-content {
+    font-size: 1.75rem;
+}
+#portfolio .p-item .p-link:hover .p-hover {
+    opacity: 1;
+}
+#portfolio .p-item .p-caption .pc-heading {
+    /* font-size: 1.5rem; */
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin-bottom: 0; */
+    
+}
+#portfolio .p-item .p-caption .pc-subheading {
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p-modal .modal-content h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.p-modal .modal-content .p-intro {
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p-modal .close-modal {
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+}
+.p-modal .close-modal:hover {
+    color: rgba(var(--bs-danger-rgb));
+    transition: all 200ms ease-in-out;
+}
+.t-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin-top: 4rem;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2.5rem;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #dadde0;
+}
+.timeline > li {
+    margin-bottom: 3rem;
+}
+.timeline > li:after, .timeline > li::before {
+    content: '';
+    display: table;
+}
+.timeline > li::after {
+    clear: both;
+}
+.timeline > li .t-panel {
+    padding: 0 1.25rem 0 6.25rem;
+    text-align: left;
+}
+.timeline > li .t-image {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    width: 5.25rem;
+    height: 5.25rem;
+    text-align: center;
+    color: #FFF;
+    border-radius: 100%;
+    border: 5px #dadde0 solid;
+}
+.timeline > li .t-image:last-child {
+    background-color: rgba(var(--bs-danger-rgb));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline > li .t-image h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.timeline .t-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    font-weight: bold;
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.timeline .t-body > ul, .timeline .t-body > p {
+    margin-bottom: 0;
+}
+.t-member {
+    margin-bottom: 0; 
+}
+.t-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    margin-top: 3rem;
+}
+.t-member h4 {
+    margin-top: 1.7rem;
+    margin-bottom: 0;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.t-member p {
+    font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+.img-logo {
+    height: 2.5rem;
+}
+#contact {
+    background-color: teal;
+    background-image: url(/img/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contact input {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+#contact .form-textarea {
+    height: 90%;
+}
+#contact .form-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+}
+#contact .form-control:focus {
+    box-shadow: 5px 5px 12px #51e2e5;
+}
+@media(max-width: 991.98px) {
+    header.back-image {
+        padding-top: 11rem;
+        padding-bottom: 13rem;
+    }
+    header.back-image .back-image-heading {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    #main-navbar .navbar-nav .nav-item .nav-link {
+        color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+    }
+    #main-navbar {
+        background-color: #212529;
+    }
+    .p-modal .modal-content h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+@media(min-width: 768px) {
+    .timeline::before {
+        left: 50%;
+    }
+    .timeline > li {
+        min-height: 6.25rem;
+        margin-bottom: 6.25rem;
+    }
+    .timeline > li .t-panel {
+        float: left;
+        width: 40%;
+        padding: 0 1.25rem 1.25rem 2rem;
+        text-align: right;
+    }
+    .timeline > li .t-image {
+        left: 50%;
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-left: -50px;
+    }
+    .timeline > li .t-image h4 {
+        font-size: 1.25rem;
+        line-height: 1rem;
+    }
+    .timeline > li:nth-child(2n) > .t-panel {
+        float: right;
+        padding: 0 2rem 1.25rem 1.25rem;
+        text-align: left;
+    }
+}
+@media(min-width: 992px) {
+    header.back-image {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+    #main-navbar {
+        padding: 1.5rem auto;
+        border: none;
+        transition: padding 300ms ease-in-out;
+    }
+    #main-navbar .navbar-brand {
+        font-size: 1.5rem;
+        transition: font-size 300ms ease-in-out;
+        text-shadow: 0.1rem 0.1rem 0.1rem #6b3333;
+    }
+    #main-navbar .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+    #main-navbar .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+    #main-navbar.navbar-mobile .navbar-brand {
+        font-size: 1.2rem;
+    }
+    #main-navbar.navbar-mobile {
+        padding: 1rem auto;
+        background-color: #212529;
+    }
+    .timeline > li {
+        min-height: 10rem;
+    }
+    .timeline > li .t-panel {
+        padding: 0 1.25rem;
+    }
+    .timeline > li .t-image {
+        width: 10rem;
+        height: 10rem;
+        margin-left: -75px;
+    }
+    .timeline > li .t-image h4 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
+@media(min-width: 1200px) {
+    .timeline > li {
+        min-height: 11rem;
+    }
+    .timeline > li .t-panel {
+        padding: 0 6.25rem 1.25rem 0.75rem;
+    }
+    .timeline > li .t-image {
+        width: 11.5rem;
+        height: 11.5rem;
+        margin-left: -90px;
+    }
+    .timeline > li .t-image h4 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+}
